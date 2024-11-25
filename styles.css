@@ -1,0 +1,107 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;  /* Largura 100% da tela */
+    padding: 5vw; /* Margem flexível */
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff80ff;
+    text-shadow: 0 0 10px #ff80ff, 0 0 20px #ff33ff;
+    margin-bottom: 20px;
+}
+
+/* Slider styles */
+.slider-container {
+    margin: 20px 0;
+}
+
+input[type="range"] {
+    width: 80%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff33ff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff33ff;
+    cursor: pointer;
+}
+
+.slider-label {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Photo container */
+.photo-container {
+    display: inline-block;  /* Para permitir a borda envolver a foto */
+    position: relative;
+    padding: 15px;  /* Espaço entre a borda e a imagem */
+    text-align: center; /* Centraliza a imagem dentro do container */
+}
+
+.photo-container img {
+    width: 600px;         /* Largura fixo para 600px */
+    height: 600px;        /* Altura fixa para 600px */
+    object-fit: cover;    /* Garantir que a imagem cubra o espaço sem distorcer */
+    border-radius: 10px;  /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombra sutil para a imagem */
+    animation: pulse 2s infinite; /* Aplicando a animação de "pulse" */
+}
+
+/* Animação de "pulse" */
+@keyframes pulse {
+    0% {
+        transform: scale(1);  /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    }
+    100% {
+        transform: scale(1);  /* Retorna ao tamanho original */
+    }
+}
+
+/* Button styles */
+.continue-btn {
+    display: block;  /* Garante que o botão ocupe uma linha inteira */
+    margin: 20px auto;  /* Centraliza o botão */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: linear-gradient(90deg, #ff80ff, #a033ff);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff80ff, 0 0 20px #a033ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff33ff, 0 0 30px #a033ff;
+}
+
+   

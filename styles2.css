@@ -1,0 +1,137 @@
+/* styles2.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nuvens */
+.clouds {
+  background: url('images/clouds.png') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: cloudMove 10s infinite;
+}
+
+@keyframes cloudMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Carrossel */
+.carousel-container {
+  margin: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  
+}
+
+.carousel img {
+  width: 400px;
+  height:400px;
+  margin: 10px;
+  animation: carouselSlide 30s infinite linear;
+}
+
+@keyframes carouselSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.carousel-message {
+  font-size: 1.5em;
+  color: #ff80ff;
+  margin-top: 10px;
+}
+
+/* Contador */
+.counter-container {
+  margin-top: 30px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+.time-number {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #ff80ff;
+}
+
+.time-label {
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 5px;
+}
+
+/* Música */
+.music-player {
+  margin-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  
+}
+
+/* Animação do botão de continuar */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Mensagem Romântica */
+.romantic-message {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #fff;
+  margin: 20px 0;
+  text-shadow: 0 0 10px #fff, 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Barras Neon com efeito de desvanecer nas pontas */
+.neon-bar {
+  height: 1px;
+  width: 40%;
+  margin: 20px auto;
+  border-radius: 10px;
+  margin-top: 2%;
+
+
+  /* Gradiente com desvanecimento nas pontas */
+  background: linear-gradient(90deg, rgba(255, 51, 255, 0) 0%, #ff33ff 30%, #33ffff 70%, rgba(51, 255, 255, 0) 100%);
+  
+  /* Brilho neon */
+  box-shadow: 0 0 10px #ff33ff, 0 0 20px #33ffff;
+}
+
+
